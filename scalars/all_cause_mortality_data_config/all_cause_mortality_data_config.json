@@ -1,0 +1,550 @@
+{
+  "all_cause_mortality": {
+    "interventions": {
+        "alcohol": {
+          "unit": "drinks/week",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 0.1],
+              [0.1, 1],
+              [1.1, 6],
+              [6.1, 14],
+              [14.1, 30],
+              [30.1, "inf"]
+            ],
+            "prediction_values": [
+              [1.39, 1.71],
+              [1, 1],
+              [1.05, 1.41],
+              [1.04, 1.38],
+              [1.18, 1.57],
+              [1.21, 2.13]
+            ]
+          }
+        },
+        "grain_unrefined": {
+          "unit": "servings/day",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 0.1],
+              [0.1, 0.5],
+              [0.6, 1],
+              [1.1, 1.5],
+              [1.6, "inf"]
+            ],
+            "prediction_values": [
+              [1, 1],
+              [0.69, 1.01],
+              [0.54, 0.81],
+              [0.51, 0.78],
+              [0.41, 0.65]
+            ]
+          }
+        },
+        "grain_refined": {
+          "unit": "servings/day",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 0.1],
+              [0.1, 0.5],
+              [0.6, 1],
+              [1.1, 1.5],
+              [1.6, "inf"]
+            ],
+            "prediction_values": [
+              [1, 1],
+              [0.76, 1.22],
+              [0.85, 1.35],
+              [0.85, 1.36],
+              [1.04, 1.72]
+            ]
+          }
+        },
+        "meat_unprocessed": {
+          "unit": "servings/week",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 0.1],
+              [0.1, 2],
+              [2.1, 4],
+              [4.1, 6],
+              [6.1, 8],
+              [8.1, "inf"]
+            ],
+            "prediction_values": [
+              [1, 1],
+              [1.03, 1.06],
+              [1.08, 1.11],
+              [1.13, 1.16],
+              [1.18, 1.21],
+              [1.23, 1.26]
+            ]
+          }
+        },
+        "meat_processed": {
+          "unit": "servings/week",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 0.1],
+              [0.1, 2],
+              [2.1, 4],
+              [4.1, 6],
+              [6.1, 8],
+              [8.1, "inf"]
+            ],
+            "prediction_values": [
+              [1, 1],
+              [1.05, 1.08],
+              [1.12, 1.15],
+              [1.19, 1.22],
+              [1.26, 1.29],
+              [1.33, 1.36]
+            ]
+          }
+        },
+        "fruits_and_veggies": {
+          "unit": "servings/day",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 1.5],
+              [1.5, 2.5],
+              [2.5, 3.5],
+              [3.5, 4.5],
+              [4.5, 5.5],
+              [5.5, 6.5],
+              [6.5, 7.5],
+              [7.5, 8.5]
+            ],
+            "prediction_values": [
+              [1.00, 1.00],
+              [0.91, 1.12],
+              [0.82, 1.01],
+              [0.69, 0.88],
+              [0.72, 0.95],
+              [0.66, 0.91],
+              [0.70, 1.00],
+              [0.67, 1.02]
+            ]
+          }
+        },
+        "water": {
+          "unit": "ml/day",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 311],
+              [311, 753],
+              [753, 1374],
+              [1374, 3776]
+            ],
+            "prediction_values": [
+              [1, 1],
+              [0.83, 1.07],
+              [0.72, 0.92],
+              [0.77, 1.00]
+            ]
+          }
+        },
+        "refined_sugar": {
+          "unit": "g/day",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 0.1],
+              [0.1, 28],
+              [28.1, 56],
+              [56.1, 84],
+              [84.1, 112],
+              [112.1, 140],
+              [140.1, 168],
+              [168.1, "inf"]
+            ],
+            "prediction_values": [
+              [1.0, 1.0],
+              [1.01, 1.07],
+              [1.05, 1.11],
+              [1.09, 1.15],
+              [1.13, 1.19],
+              [1.17, 1.23],
+              [1.21, 1.27],
+              [1.25, 1.31]
+            ]
+          }
+        },
+        "artificial_sweetener": {
+          "unit": "mg/day",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 0.1],
+              [0.1, 140],
+              [140.1, 280],
+              [280.1, 420],
+              [420.1, 560],
+              [560.1, 700],
+              [700.1, 840],
+              [840.1, "inf"]
+            ],
+            "prediction_values": [
+              [1.0, 1.0],
+              [1.02, 1.10],
+              [1.08, 1.16],
+              [1.14, 1.22],
+              [1.20, 1.28],
+              [1.26, 1.34],
+              [1.32, 1.40],
+              [1.38, 1.46]
+            ]
+          }
+        },
+        "cardio": {
+          "unit": "MET hr/week",
+          "type": "numerical",
+          "distribution": {
+              "male":{
+                    "intervention_values": [
+                      [0, 0.1],
+                      [0.1, 7.5],
+                      [7.5, 15.0],
+                      [15.0, 30.0],
+                      [30.0, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1, 1],
+                      [0.81, 0.87],
+                      [0.74, 0.80],
+                      [0.71, 0.76],
+                      [0.69, 0.79]
+                    ]
+              },
+              "female":{
+                    "intervention_values": [
+                      [0, 0.1],
+                      [0.1, 7.5],
+                      [7.5, 15.0],
+                      [15.0, 30.0],
+                      [30.0, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1, 1],
+                      [0.73, 0.80],
+                      [0.65, 0.71],
+                      [0.63, 0.70],
+                      [0.64, 0.75]
+                    ]
+              }
+          }
+        },
+        "strength_training": {
+          "unit": "min/week",
+          "type": "numerical",
+          "distribution": {
+              "male":{
+                    "intervention_values": [
+                      [0, 0.5],
+                      [0.5, 52.5],
+                      [52.6, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1, 1],
+                      [0.59, 0.81],
+                      [0.54, 0.74]
+                    ]
+              },
+              "female":{
+                    "intervention_values": [
+                      [0, 0.1],
+                      [0.1, 66],
+                      [66.1, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1, 1],
+                      [0.59, 0.81],
+                      [0.54, 0.74]
+                    ]
+              }
+          }
+        },
+        "sleep_duration": {
+          "unit": "hours",
+          "type": "numerical",
+          "distribution": {
+              "male":{
+                    "intervention_values": [
+                      [0, 3.5],
+                      [3.5, 4.5],
+                      [4.5, 5.5],
+                      [5.5, 6.5],
+                      [6.5, 7],
+                      [7, 8.5],
+                      [8.5, 9.5],
+                      [10.5, "inf"]
+                    ],
+                    "prediction_values": [
+                      [0.96, 1.47],
+                      [1.06, 1.28],
+                      [1.05, 1.18],
+                      [1.04, 1.11],
+                      [1, 1],
+                      [1.09, 1.15],
+                      [1.13, 1.21],
+                      [1.28, 1.40]
+                    ]
+              },
+              "female":{
+                    "intervention_values": [
+                      [0, 3.5],
+                      [3.5, 4.5],
+                      [4.5, 5.5],
+                      [5.5, 6.5],
+                      [6.5, 7.5],
+                      [7.5, 8.5],
+                      [8.5, 9.5],
+                      [10.5, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1.08, 1.64],
+                      [1.01, 1.22],
+                      [1.01, 1.13],
+                      [1.03, 1.11],
+                      [1, 1],
+                      [1.09, 1.16],
+                      [1.17, 1.28],
+                      [1.34, 1.50]
+                    ]
+              }
+          }
+        },
+        "sleep_quality": {
+          "unit": "SQI",
+          "type": "categorical",
+          "distribution": {
+            "intervention_values": [2,1,0],
+            "prediction_values": [
+              [1, 1],
+              [0.81, 1.19],
+              [1.32, 2.03]
+            ]
+          }
+        },
+        "sauna_frequency": {
+          "unit": "times/week",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 1],
+              [2, 3],
+              [4, 7]
+            ],
+            "prediction_values": [
+              [1, 1],
+              [0.98, 0.72],
+              [0.86, 1.18]
+            ]
+          }
+        },
+        "stress_level": {
+          "unit": "level",
+          "type": "categorical",
+          "distribution": {
+              "male":{
+                    "intervention_values": [0,1,2],
+                    "prediction_values": [
+                      [1, 1],
+                      [1.00, 1.16],
+                      [1.33, 1.75]
+                    ]
+              },
+              "female":{
+                    "intervention_values": [0,1,2],
+                    "prediction_values": [
+                      [1, 1],
+                      [0.95, 1.11],
+                      [1.08, 1.37]
+                    ]
+              }
+          }
+        },
+        "calcium": {
+        "unit": "mg/day",
+        "type": "numerical",
+        "distribution": {
+            "male":{
+                  "intervention_values": [
+                      [0, 1],
+                      [1, 500],
+                      [500, 1000]
+                  ],
+                  "prediction_values": [
+                      [1, 1],
+                      [1, 1.01],
+                      [1.01, 1.04]
+                  ]
+            },
+            "female":{
+                  "intervention_values": [
+                      [0, 1],
+                      [1, 500],
+                      [500, 1000],
+                      [1000, 1500]
+                  ],
+                  "prediction_values": [
+                      [1, 1],
+                      [0.87, 0.94],
+                      [0.80, 0.88],
+                      [0.87, 0.99]
+                  ]
+            }
+          }
+        },
+        "fish_oil_omega_3": {
+          "unit": "g/day",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 0.3],
+              [0.4, 2.4],
+              [2.5, "inf"]
+            ],
+            "prediction_values": [
+              [1, 1],
+              [0.67, 1.08],
+              [0.52, 1.77]
+            ]
+          }
+        },
+        "green_tea": {
+          "unit": "ml/day",
+          "type": "numerical",
+          "distribution": {
+              "male":{
+                    "intervention_values": [
+                      [0, 240],
+                      [240.1, 480],
+                      [480.1, 960],
+                      [960.1, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1, 1],
+                      [0.91, 0.97],
+                      [0.96, 0.87],
+                      [0.88, 0.95]
+                    ]
+              },
+              "female":{
+                    "intervention_values": [
+                      [0, 240],
+                      [240.1, 480],
+                      [480.1, 960],
+                      [960.1, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1, 1],
+                      [0.82, 0.93],
+                      [0.90, 0.74],
+                      [0.83, 0.90]
+                    ]
+              }
+          }
+        },
+        "legumes": {
+          "unit": "servings/day",
+          "type": "numerical",
+          "distribution": {
+            "intervention_values": [
+              [0, 0.1],
+              [0.1, 1],
+              [1.1, 2],
+              [2.1, 3],
+              [3.1, "inf"]
+            ],
+            "prediction_values": [
+              [1, 1],
+              [0.83, 0.93],
+              [0.71, 0.81],
+              [0.59, 0.69],
+              [0.47, 0.57]
+            ]
+          }
+        },
+        "fat_trans": {
+          "unit": "g/day",
+          "type": "numerical",
+          "distribution": {
+              "male":{
+                    "intervention_values": [
+                      [0, 5.5],
+                      [5.6, 7.3],
+                      [7.4, 8.9],
+                      [9.0, 10.8],
+                      [10.8, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1, 1],
+                      [0.94, 1.34],
+                      [0.97, 1.37],
+                      [1.26, 1.75],
+                      [1.57, 2.15]
+                    ]
+              },
+              "female":{
+                    "intervention_values": [
+                      [0, 4.4],
+                      [4.5, 5.8],
+                      [5.9, 7.1],
+                      [7.2, 8.6],
+                      [8.7, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1, 1],
+                      [0.94, 1.34],
+                      [1.37, 1.37],
+                      [1.26, 1.75],
+                      [1.57, 2.15]
+                    ]
+              }
+          }
+        },
+        "smoking": {
+          "unit": "cigarettes/day",
+          "type": "numerical",
+          "distribution": {
+              "male":{
+                    "intervention_values": [
+                      [0, 7],
+                      [8, 15],
+                      [16, 25],
+                      [25, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1.08, 1.24],
+                      [1.36, 1.56],
+                      [1.66, 1.97],
+                      [1.52, 2.23]
+                    ]
+              },
+              "female":{
+                    "intervention_values": [
+                      [0, 7],
+                      [8, 15],
+                      [16, 25],
+                      [25, "inf"]
+                    ],
+                    "prediction_values": [
+                      [1.15, 1.32],
+                      [1.43, 1.70],
+                      [1.47, 2.04],
+                      [1.05, 3.43]
+                    ]
+              }
+          }
+        }
+    }
+  }
+}

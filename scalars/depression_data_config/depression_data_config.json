@@ -1,0 +1,26 @@
+{
+  "depression": {
+    "interventions": {
+      "fish_oil_omega_3": {
+        "unit": "g/day",
+        "type": "numerical",
+        "distribution": {
+          "intervention_values": [
+            [ 0.00, 0.35 ],
+            [ 0.35, 0.65 ],
+            [ 0.65, 0.95 ],
+            [ 0.95, 1.45 ],
+            [ 1.45, 2.7 ]
+          ],
+          "prediction_values": [
+            [ 1.00, 1.00 ],
+            [ 0.39, 0.8 ],
+            [ 0.58, 1.21 ],
+            [ 0.43, 0.97 ],
+            [ 0.36, 0.81 ]
+          ]
+        }
+      }
+    }
+  }
+}

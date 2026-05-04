@@ -1,0 +1,28 @@
+.venv
+*.egg-info/
+dist/
+build/
+ 
+# Environment variables and secrets
+secrets.env
+.env
+*.env
+credentials*.json
+ 
+# Logs
+*.log
+ 
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+ 
+# OS
+.DS_Store
+Thumbs.db
+ 
+# Temporary files
+*.tmp
+*.bak

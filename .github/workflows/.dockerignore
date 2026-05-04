@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+ 
+# Git
+.git/
+.gitignore
+ 
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+ 
+# OS
+.DS_Store
+Thumbs.db
+ 
+# GitHub Actions (not needed in container)
+.github/
+ 
+# Docs
+README.md
+*.md
+ 
+# Logs
+*.log
+ 
+# Temp
+*.tmp
+*.bak
