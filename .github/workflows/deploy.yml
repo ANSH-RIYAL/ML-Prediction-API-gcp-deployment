@@ -22,18 +22,18 @@ jobs:
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
 
-      - name: Configure Docker for Artifact Registry
-        run: gcloud auth configure-docker ${{ secrets.GCP_REGION }}-docker.pkg.dev --quiet
+      - name: Configure Docker
+        run: gcloud auth configure-docker --quiet
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/ml-prediction-api/ml-prediction-api:latest .
-          docker push ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/ml-prediction-api/ml-prediction-api:latest
+          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/ml-prediction-api .
+          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/ml-prediction-api
 
       - name: Deploy to Cloud Run
         run: |
           gcloud run deploy ml-prediction-api \
-            --image ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/ml-prediction-api/ml-prediction-api:latest \
+            --image gcr.io/${{ secrets.GCP_PROJECT_ID }}/ml-prediction-api \
             --region ${{ secrets.GCP_REGION }} \
             --platform managed \
             --allow-unauthenticated \
