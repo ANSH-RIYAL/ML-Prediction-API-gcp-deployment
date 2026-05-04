@@ -53,3 +53,4 @@ Auto-deploys to Cloud Run on push to `main` via GitHub Actions.
 | `GCP_SA_KEY` | GCP service account key JSON |
 | `GCP_PROJECT_ID` | GCP project ID |
 | `GCP_REGION` | GCP region (e.g., `us-central1`) |
+.
