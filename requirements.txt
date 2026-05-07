@@ -1,8 +1,9 @@
 scipy
 numpy
 pandas
-scikit-learn
+scikit-learn==1.1.2
 flask
 flask-cors
 gunicorn
 matplotlib
+joblib
